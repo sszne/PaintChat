@@ -13,6 +13,7 @@ interface State {
 class TestComponent extends React.Component<Props, State> {
   constructor(props: any) {
       super(props);
+      this.context = React.createRef();
     this.state = {
       text: 'text',
     };
